@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['/home']">Productos</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/home']"
+          [routerLinkActive]="['active']"
+        >
+          <span class="fas fa-home" aria-hidden="true"></span>
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/productos']"
+          [routerLinkActive]="['active']"
+        >
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          Productos</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/departamentos']"
+          [routerLinkActive]="['active']"
+        >
+          <i class="fas fa-gifts"></i>
+          Departamentos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/contacto']"
+          [routerLinkActive]="['active']"
+        >
+          <i class="fas fa-address-book"></i>
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- le vamos a decir que aqui en el app component que es nuestro component principal nos mandrá llamar el conponente que esta en la ruta -->
+
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <unoComponent></unoComponent> -->
+<!-- <dosComponent></dosComponent> -->
+<!-- <tresComponent></tresComponent> -->
+<!-- <homeComponent></homeComponent> -->
